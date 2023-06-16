@@ -5,23 +5,11 @@
 
 html {
     font-family: 'Inter', sans-serif;
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.02rem;
 }
 
-nav {
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 24px;
-}
-
-.logo img{
-    height: 32px;
-}
-
-.profile img{
-    height: 32px;
+body {
+    width: 100%;
 }
 
 .primary{
@@ -36,4 +24,81 @@ nav {
 
     height: 32px;
     align-items: center;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height:64px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+header .logo object {
+    height: 24px;
+}
+
+.profile {
+display: flex;
+}
+
+.profile object {
+    margin-right: 12px;
+}
+
+/* FEED CENTRALE */
+
+.feed {
+    padding: 50px;
+}
+
+/* TABS */
+
+.tabs {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.tabs h5{
+    letter-spacing: normal;
+    display: inline;
+}
+
+/* ARTICLE */
+
+.article {
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+
+.article h2{
+    font-size: 20px;
+}
+
+.article p{
+    font-size: 14px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data p{
+    color: #757575;
+    font-size: 13px;
+}
+
+img{
+    width: 200px;
+}
+
+.tag{
+    padding: 4px 8px;
+    background-color: #f2f2f2;
+    border-radius: 99px;
+    color: #757575;
 }
