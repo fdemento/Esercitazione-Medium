@@ -12,6 +12,14 @@ body {
     width: 100%;
 }
 
+main {
+    /*  */
+}
+
+.sidebar h5{
+    font-weight: 500;
+}
+
 .primary{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -26,36 +34,52 @@ body {
     align-items: center;
 }
 
-/* HEADER */
+/* #### HEADER #### */
 
 header {
     display: flex;
+    position: sticky;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
     padding: 0 24px;
     height:64px;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-header .logo object {
+header .logo img {
     height: 24px;
 }
 
 .profile {
-display: flex;
+    display: flex;
+    align-items: center;
 }
 
-.profile object {
-    margin-right: 12px;
+.profile svg {
+    margin-right: 12px; 
 }
 
-/* FEED CENTRALE */
+.profile .avatar{
+    border-radius: 99px;
+    margin-left: 12px;
+}
+
+/* #### MAIN #### */
 
 .feed {
-    padding: 50px;
+    width: 50%;
+    padding: 32px;
+    border-right: solid 1px;
 }
 
-/* TABS */
+.sidebar{
+    width: 40%;
+    padding: 32px;
+}
+
+
+/* #### TABS #### */
 
 .tabs {
     border-bottom: 1px solid #d6d6d6;
@@ -66,10 +90,12 @@ display: flex;
     display: inline;
 }
 
-/* ARTICLE */
+/* #### ARTICLE #### */
 
 .article {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
     padding: 20px 0 20px 0;
 }
 
@@ -79,9 +105,27 @@ display: flex;
 
 .article p{
     font-size: 14px;
+    color: #757575;
+    min-width: 500px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.excerpt{
+    padding: 10px 0 0 0;
+}
+
+.author object {
+    margin-right: 8px;
+    height: 24px;
 }
 
 .meta {
+    padding: 10px 0 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,13 +136,146 @@ display: flex;
     font-size: 13px;
 }
 
-img{
-    width: 200px;
-}
-
 .tag{
     padding: 4px 8px;
     background-color: #f2f2f2;
     border-radius: 99px;
     color: #757575;
+}
+
+.cover img {
+    width: 200px;
+    padding-left: 32px;
+}
+
+/* #### ADV #### */
+
+.adv{
+    text-align: center;
+    padding: 32px 32px 24px 32px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.adv-banner {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.adv p{
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.adv button{
+    font-family: 'Inter';
+     letter-spacing: -0.01rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 99px;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-bottom: 12px;
+}
+
+.adv .link{
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+/* #### TOPICS #### */
+
+.topics{
+    padding: 32px 32px 12px 32px;
+}
+
+.topics button {
+    font-size: 14px;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 8px 8px 0;
+    background-color: #f2f2f2;
+    border-radius: 99px;
+    color: #757575;
+}
+
+.topics h5{
+    margin-bottom: 12px;
+}
+
+/* #### FOLLOW #### */
+
+.follow{
+    padding: 32px 32px 12px 32px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.user .bio{
+    width: 100%;
+    margin: 0 12px 0px 12px;
+}
+
+.user h5{
+    display: block;
+    font-weight: 700;
+}
+
+.user p{
+    display: block;
+    font-size: 12px;
+    color: #757575;
+}
+
+.user img{
+    height: 36px;
+    border-radius: 99px;
+}
+
+.user button{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    padding: 1px 12px;
+    border-radius: 99px;
+    border: 1px solid black;
+    background-color: white;
+
+    height: 32px;
+    align-items: center;
+}
+
+/* #### SAVED #### */
+
+.saved{
+    padding: 32px 32px 24px 32px;
+}
+
+.saved .author{
+    font-size: 14px;
+}
+
+.bookmark{
+    margin: 20px 0 20px 0;
+}
+
+.bookmark h5{
+    font-weight: 700;
+}
+
+.bookmark p{
+    margin-top: 8px;
+    font-size: 12px;
+    color: #757575;
+}
+
+.saved .link{
+    font-size: 12px;
+    color:#41872d;
 }
