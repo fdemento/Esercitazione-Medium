@@ -12,10 +12,6 @@ body {
     width: 100%;
 }
 
-main {
-    /*  */
-}
-
 .sidebar h5{
     font-weight: 500;
 }
@@ -23,7 +19,7 @@ main {
 .primary{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
 
     padding: 1px 12px;
     border-radius: 99px;
@@ -32,6 +28,13 @@ main {
 
     height: 32px;
     align-items: center;
+    transition: 0.3s;
+}
+
+.primary:hover{
+    background-color: #f2f2f2;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 /* #### HEADER #### */
@@ -58,6 +61,7 @@ header .logo img {
 
 .profile svg {
     margin-right: 12px; 
+    cursor: pointer;
 }
 
 .profile .avatar{
@@ -67,13 +71,22 @@ header .logo img {
 
 /* #### MAIN #### */
 
+main {
+    position: relative;
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
 .feed {
-    width: 50%;
+    max-width: 60%;
+    margin-top: 24px;
     padding: 32px;
-    border-right: solid 1px;
+    border-right: solid 1px #d6d6d6;
 }
 
 .sidebar{
+    position: sticky;
     width: 40%;
     padding: 32px;
 }
@@ -85,18 +98,27 @@ header .logo img {
     border-bottom: 1px solid #d6d6d6;
 }
 
-.tabs h5{
-    letter-spacing: normal;
-    display: inline;
+.tabs h5 {
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 12px 0 12px;
+    letter-spacing: 0.05rem;
+    margin: 0 12px 10px 0;
+    color: grey;
+}
+
+.tabs h5 span{
+    color: black;
+    padding: 0 12px 10px 12px;
+    border-bottom: solid 1px;
 }
 
 /* #### ARTICLE #### */
 
 .article {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    padding: 20px 0 20px 0;
+    padding: 36px 0 36px 0;
 }
 
 .article h2{
@@ -107,6 +129,11 @@ header .logo img {
     font-size: 14px;
     color: #757575;
     min-width: 500px;
+}
+
+.content{
+    max-width: 80%;
+    max-height: auto;
 }
 
 .author {
@@ -136,6 +163,14 @@ header .logo img {
     font-size: 13px;
 }
 
+.action{
+    display: flex;
+}
+
+.action svg{
+    margin-left: 8px;
+}
+
 .tag{
     padding: 4px 8px;
     background-color: #f2f2f2;
@@ -143,16 +178,20 @@ header .logo img {
     color: #757575;
 }
 
-.cover img {
-    width: 200px;
-    padding-left: 32px;
+.cover {
+height: 100%;
+}
+
+.cover img{
+    max-width: 150px;
+    height: 100px;
 }
 
 /* #### ADV #### */
 
 .adv{
     text-align: center;
-    padding: 32px 32px 24px 32px;
+    padding: 32px 32px 32px 32px;
     border-bottom: 1px solid #d6d6d6;
 }
 
@@ -177,6 +216,13 @@ header .logo img {
     background-color: white;
     border: 1px solid lightgray;
     margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.adv button:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+    transition: 0.3s;
 }
 
 .adv .link{
@@ -187,7 +233,7 @@ header .logo img {
 /* #### TOPICS #### */
 
 .topics{
-    padding: 32px 32px 12px 32px;
+    padding: 32px 0 32px 0;
 }
 
 .topics button {
@@ -201,13 +247,13 @@ header .logo img {
 }
 
 .topics h5{
-    margin-bottom: 12px;
+    margin-bottom: 18px;
 }
 
 /* #### FOLLOW #### */
 
 .follow{
-    padding: 32px 32px 12px 32px;
+    padding-bottom: 32px;
 }
 
 .user {
@@ -240,7 +286,7 @@ header .logo img {
 .user button{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
 
     padding: 1px 12px;
     border-radius: 99px;
@@ -249,12 +295,19 @@ header .logo img {
 
     height: 32px;
     align-items: center;
+    transition: 0.3s;
+}
+
+.user button:hover{
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 /* #### SAVED #### */
 
 .saved{
-    padding: 32px 32px 24px 32px;
+    padding-bottom: 32px;
 }
 
 .saved .author{
