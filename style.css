@@ -67,6 +67,7 @@ header .logo img {
 .profile .avatar{
     border-radius: 99px;
     margin-left: 12px;
+    transform: 0.3s;
 }
 
 /* #### MAIN #### */
@@ -85,8 +86,7 @@ main {
     border-right: solid 1px #d6d6d6;
 }
 
-.sidebar{
-    position: sticky;
+.sidebar {
     width: 40%;
     padding: 32px;
 }
@@ -117,8 +117,9 @@ main {
 
 .article {
     display: flex;
-    width: 100%;
-    padding: 36px 0 36px 0;
+    overflow: hidden;
+    height: 270px;
+    align-items: center;
 }
 
 .article h2{
@@ -128,12 +129,26 @@ main {
 .article p{
     font-size: 14px;
     color: #757575;
-    min-width: 500px;
 }
 
 .content{
-    max-width: 80%;
+    min-width: 50%;
+    width: 85%;
     max-height: auto;
+}
+
+.cover{
+    margin-left: 24px;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    background: black;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .author {
@@ -176,15 +191,6 @@ main {
     background-color: #f2f2f2;
     border-radius: 99px;
     color: #757575;
-}
-
-.cover {
-height: 100%;
-}
-
-.cover img{
-    max-width: 150px;
-    height: 100px;
 }
 
 /* #### ADV #### */
@@ -323,9 +329,16 @@ height: 100%;
 }
 
 .bookmark p{
+    display: flex;
     margin-top: 8px;
     font-size: 12px;
     color: #757575;
+    align-self: center
+}
+
+.bookmark img{
+    height: 16px;
+    margin-left: 4px;
 }
 
 .saved .link{
