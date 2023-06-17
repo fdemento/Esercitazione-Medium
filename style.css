@@ -41,13 +41,13 @@ body {
 
 header {
     display: flex;
-    position: sticky;
     align-items: center;
     justify-content: space-between;
     background-color: white;
     padding: 0 24px;
     height:64px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 10;
 }
 
 header .logo img {
@@ -73,7 +73,6 @@ header .logo img {
 /* #### MAIN #### */
 
 main {
-    position: relative;
     display: flex;
     width: 85%;
     margin: auto;
@@ -139,7 +138,7 @@ main {
 
 .cover{
     margin-left: 24px;
-    height: 200px;
+    height: 150px;
     width: 300px;
     overflow: hidden;
     background: black;
@@ -250,6 +249,13 @@ main {
     background-color: #f2f2f2;
     border-radius: 99px;
     color: #757575;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.topics button:hover{
+    background-color: #e4e4e4;
+    transition: 0.3s;
 }
 
 .topics h5{
