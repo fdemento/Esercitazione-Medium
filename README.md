@@ -7,3 +7,5 @@ il file index.html con il codice HTML della pagina;
 il file style.css con il codice CSS della pagina.
 
 Per costruire la pagina, partendo dal riferimento visivo fornito, è stata disegnata una struttura di base preliminare da seguire per usare le classi in maniera coerente.
+
+![Struttura](assets/structure.jpg)
